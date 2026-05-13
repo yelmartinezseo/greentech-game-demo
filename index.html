@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greentech.game() — Demo · Yel Martínez</title>
+  <meta name="description" content="Demo del juego educativo Greentech.game() desarrollado por Yel Martínez. Aprende sobre ESG, Greentech y los 17 ODS jugando. Juega en yel-martinez-portfolio.com">
+  <meta name="author" content="Yel Martínez — yel-martinez-portfolio.com">
+  <link rel="canonical" href="https://yel-martinez-portfolio.com/byte-404-greentech-game-de-yel-martinez/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Greentech.game() — Juego educativo ESG · Yel Martínez">
+  <meta property="og:description" content="6 niveles para aprender Greentech, ESG y los 17 ODS. Desarrollado por Yel Martínez. Gratis, sin registro.">
+  <meta property="og:url" content="https://yel-martinez-portfolio.com/byte-404-greentech-game-de-yel-martinez/">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="byte-game.css">
+
+  <style>
+    /* ── PAGE WRAPPER — demo standalone ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #020206;
+      font-family: 'Share Tech Mono', monospace;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Banner superior — autoría y enlace canónico */
+    .demo-banner {
+      width: 100%;
+      background: #050408;
+      border-bottom: 1px solid rgba(255,230,0,0.15);
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .demo-banner-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .demo-banner-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: #ffe600;
+      box-shadow: 0 0 8px rgba(255,230,0,.6);
+      animation: demopulse 1.4s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    .demo-banner-txt {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 8px;
+      color: rgba(255,230,0,.7);
+      letter-spacing: 0.5px;
+    }
+    .demo-banner-txt strong { color: #ffe600; }
+    .demo-banner-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffe600;
+      color: #050408;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 8px;
+      padding: 8px 16px;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      clip-path: polygon(4px 0,100% 0,calc(100% - 4px) 100%,0 100%);
+      transition: background .1s;
+      white-space: nowrap;
+    }
+    .demo-banner-cta:hover { background: #00f5ff; }
+    .demo-banner-cta-arrow { font-size: 11px; }
+
+    /* Contenedor del juego */
+    .demo-game-wrap {
+      width: 100%;
+      max-width: 900px;
+      padding: 32px 16px 48px;
+      flex: 1;
+    }
+
+    /* Footer de la demo */
+    .demo-footer {
+      width: 100%;
+      background: #050408;
+      border-top: 1px solid rgba(255,230,0,0.12);
+      padding: 20px 24px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: center;
+    }
+    .demo-footer-copy {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px;
+      color: rgba(255,255,255,0.35);
+      line-height: 1.9;
+      letter-spacing: 0.3px;
+    }
+    .demo-footer-copy a {
+      color: rgba(255,230,0,.6);
+      text-decoration: none;
+      transition: color .1s;
+    }
+    .demo-footer-copy a:hover { color: #ffe600; }
+    .demo-footer-license {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px;
+      color: rgba(255,45,85,.6);
+      text-align: right;
+      line-height: 1.9;
+      letter-spacing: 0.3px;
+    }
+    .demo-footer-license a {
+      color: rgba(255,45,85,.8);
+      text-decoration: none;
+    }
+    .demo-footer-license a:hover { color: #ff2d55; }
+
+    @keyframes demopulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.3;transform:scale(.6)} }
+
+    @media (max-width: 520px) {
+      .demo-banner { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .demo-footer { grid-template-columns: 1fr; }
+      .demo-footer-license { text-align: left; }
+    }
+  </style>
+
+  <!-- Google Fonts — mismo set que el juego -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ── BANNER DE AUTORÍA ── -->
+  <div class="demo-banner">
+    <div class="demo-banner-left">
+      <div class="demo-banner-dot"></div>
+      <div class="demo-banner-txt">
+        DEMO · Desarrollado por <strong>Yel Martínez</strong> · Digital Strategist &amp; Technologist
+      </div>
+    </div>
+    <a class="demo-banner-cta"
+       href="https://yel-martinez-portfolio.com/byte-404-greentech-game-de-yel-martinez/"
+       target="_blank" rel="noopener">
+      Jugar en mi web <span class="demo-banner-cta-arrow">&#9654;</span>
+    </a>
+  </div>
+
+  <!-- ── JUEGO ── -->
+  <div class="demo-game-wrap">
+    <div id="byte-game-root"></div>
+  </div>
+
+  <!-- ── FOOTER DEMO ── -->
+  <footer class="demo-footer">
+    <div class="demo-footer-copy">
+      © 2025 <a href="https://yel-martinez-portfolio.com" target="_blank" rel="noopener">Yel Martínez</a>
+      · Digital Strategist &amp; Technologist · Valencia, ES<br>
+      Juego completo en:
+      <a href="https://yel-martinez-portfolio.com/byte-404-greentech-game-de-yel-martinez/"
+         target="_blank" rel="noopener">
+        yel-martinez-portfolio.com/byte-404-greentech-game-de-yel-martinez/
+      </a>
+    </div>
+    <div class="demo-footer-license">
+      Licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                  target="_blank" rel="noopener">CC BY-NC-SA 4.0</a><br>
+      Uso libre · No comercial<br>
+      Cita obligatoria de autoría
+    </div>
+  </footer>
+
+  <script src="byte-game.js"></script>
+</body>
+</html>
