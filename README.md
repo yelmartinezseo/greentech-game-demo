@@ -52,8 +52,6 @@ greentech-game-demo/
 └── LICENSE           ← CC BY-NC-SA 4.0
 ```
 
-> **Nota:** Este repo contiene la demo pública. La integración completa como plugin WordPress (shortcode `[byte_game]`, inyección automática en página 404) no está incluida en este repositorio.
-
 ---
 
 ## Uso y licencia
