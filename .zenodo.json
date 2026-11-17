@@ -1,0 +1,34 @@
+{
+  "title": "BYTE 404 — Greentech Game",
+  "upload_type": "software",
+  "description": "Juego educativo con estética retro sobre tecnología sostenible: 6 niveles sobre Greentech, CSRD y los 17 Objetivos de Desarrollo Sostenible. JavaScript sin librerías y Canvas, en el navegador.",
+  "creators": [
+    {
+      "name": "Martínez, Yel",
+      "orcid": "0009-0003-0219-7265"
+    }
+  ],
+  "license": "cc-by-nc-sa-4.0",
+  "keywords": [
+    "juego educativo",
+    "serious game",
+    "ODS",
+    "CSRD",
+    "ESG",
+    "Greentech"
+  ],
+  "language": "spa",
+  "related_identifiers": [
+    {
+      "identifier": "https://yel-martinez-portfolio.com/recursos/byte-404-greentech-game-de-yel-martinez/",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/yelmartinezseo/greentech-game-demo",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
